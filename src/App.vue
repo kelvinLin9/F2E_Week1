@@ -1,9 +1,9 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
     7788995
-  </nav>
+  </nav> -->
   <router-view/>
 </template>
 
