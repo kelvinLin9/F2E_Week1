@@ -17,7 +17,7 @@
   .container {
     width: 1920px;
     height: 1430px;
-    background: #E5E5E5;
+    background: #FFC37D;
     position: relative;
     display: flex;
     justify-content: center;
