@@ -5,6 +5,9 @@
     <div class="start"></div>
     <div class="warp">
       <div class="road"></div>
+      <div class="dog"></div>
+      <div class="cat"></div>
+      <div class="pig"></div>
     </div>
   </div>
 </template>
@@ -16,7 +19,7 @@
 <style scoped>
   .container {
     width: 1920px;
-    height: 1430px;
+    height: 100vh;
     background: #FFC37D;
     position: relative;
     display: flex;
@@ -24,7 +27,7 @@
   }
   .bg_menuSide {
     width: 20px;
-    height: 1080px;
+    height: 100vh;
     position: absolute;
     background-image: url('../assets/images/bg/bg_menuSide.png');
     background-size: cover;
@@ -41,7 +44,7 @@
   }
   .warp {
     width: 1430px;
-    height: 1080px;
+    height: 100vh;
     position: relative;
     outline: solid 1px red;
     background-image:  url('../assets/images/main/start.png');
@@ -56,5 +59,31 @@
     left: 10%;
     bottom: 0%;
   }
-
+  .dog {
+    width: 351px;
+    height: 601px;
+    position: absolute;
+    background-image:  url('../assets/images/character/character_f2e.gif');
+    background-size: cover;
+    left: 13%;
+    bottom: 0%;
+  }
+  .cat {
+    width: 351px;
+    height: 601px;
+    position: absolute;
+    background-image:  url('../assets/images/character/character_ui.gif');
+    background-size: cover;
+    left: 39%;
+    bottom: 0%;
+  }
+  .pig {
+    width: 351px;
+    height: 601px;
+    position: absolute;
+    background-image:  url('../assets/images/character/character_team.gif');
+    background-size: cover;
+    left: 65%;
+    bottom: 0%;
+  }
 </style>
