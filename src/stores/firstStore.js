@@ -8,7 +8,7 @@ export default defineStore('firstStore', {
       gsap.registerPlugin(ScrollTrigger)
       const scrollTL = gsap.timeline({
         scrollTrigger: {
-          trigger: '.banner',
+          trigger: '#banner',
           pin: true,
           markers: true,
           scrub: true
@@ -23,6 +23,9 @@ export default defineStore('firstStore', {
       scrollTL.to('.newspaper-left', {
         yPercent: '100'
       }, '<')
+      scrollTL.to('.v', {
+        yPercent: '-35'
+      })
     }
   }
 })

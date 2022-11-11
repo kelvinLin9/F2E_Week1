@@ -30,8 +30,10 @@
       </nav>
     </header> -->
   </div>
-  <div class="banner bg-banner">
-    <section class="position-relative vh-100 test overflow-hidden ">
+  <!-- navbar可能要寫在裡面 -->
+  <div class="banner bg-banner test" id="banner">
+    <!-- 主題 -->
+    <section class="position-relative vh-100 overflow-hidden">
       <div class="w-100 position-absolute newspaper-up">
         <img src="../assets/images/newspaper_up.png" alt="" class="w-100 ">
       </div>
@@ -42,48 +44,62 @@
         <img src="../assets/images/newspaper_right.png" alt="" class="w-75">
       </div>
       <!-- banner -->
-      <div class="container bg-banner-inner">
-        <div>
-          <h1 class="test EB-Garamond text-primary">
+      <div class="container bg-banner-inner position-relative">
+        <!-- 1 -->
+        <div class="test my-5">
+          <h1 class="EB-Garamond text-primary my-3 test">
             The F2E
-            <span class="Roboto text-white bg-danger px-3 rounded-3">4th</span>
+            <span class="Roboto text-white bg-danger px-3 rounded-3">
+              4th
+            </span>
           </h1>
-          <h2 class="Noto-Serif-TC text-primary">
-            前端工程師和介面設計師，攜手合作拿獎金
-          </h2>
-          <p>
+        </div>
+        <!-- 2 -->
+        <div class="container my-5">
+          <div class="row justify-content-between">
+            <div class="col">
+              <h2 class="Noto-Serif-TC text-primary test">
+                前端工程師和介面設計師，攜手合作拿獎金
+              </h2>
+            </div>
+            <div class="col">
+              <div class="">
+                報名總人數<span>1158人</span>
+              </div>
+              <div>
+                報名總人數<span>1052人</span>
+              </div>
+              <div>
+                報名總人數<span>41人</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="test">
+          <p class="Noto-Serif-TC text-primary test">
             羨慕別人的酷酷網頁動畫？滿足不了同事的許願？動畫技能樹太雜無從下手？
           </p>
         </div>
-        <div>
+        <!-- 右上懸賞小圖 -->
+        <div class="task position-absolute">
           <img src="../assets/images/wanted.png" alt="">
         </div>
-        <div>
+        <!-- 怪客圖 -->
+        <div class="v position-absolute position-relative">
           <img src="../assets/images/v.png" alt="">
-          <p>
+          <p class="position-absolute text-white w-100">
             個人獎
-            <span class="">
+            <span class="text-danger">
               $13,000
             </span>
             團體獎
-            <span class="">
+            <span class="text-danger">
               $110,000
             </span>
           </p>
         </div>
-        <div>
-          <h2>
-            前端工程師和介面設計師，攜手合作拿獎金
-          </h2>
-          <p>
-            羨慕別人的酷酷網頁動畫？滿足不了同事的許願？動畫技能樹太雜無從下手？
-          </p>
-        </div>
-        <ul class="">
-          <li class="">報名總人數 1158人</li>
-          <li class="">報名總人數 1052人</li>
-          <li>報名總人數 41人</li>
-        </ul>
+
       </div>
     </section>
   </div>
@@ -141,12 +157,35 @@ export default {
     }
   }
   h2 {
-    width: 320px;
-    height: 104px;
+    width: 343px;
+    height: 180px;
     font-size: 42px;
     margin-left: 22px;
-    p {
-      font-size: 24px;
+  }
+  p {
+    width: 280px;
+    height: 140px;
+    font-size: 24px;
+    line-height: 35px;
+  }
+  ul {
+    font-size: 28px;
+  }
+}
+.task {
+  top: -50px;
+  right: -50px;
+}
+.v {
+  top: 250px;
+  right: 250px;
+  p {
+    bottom: -80px;
+    left: 30px;
+    font-size: 20px;
+    font-size: 28px;
+    span {
+      font-size: 46px;
     }
   }
 }
