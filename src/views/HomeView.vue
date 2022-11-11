@@ -41,7 +41,8 @@
       <div class="w-100 position-absolute newspaper-right">
         <img src="../assets/images/newspaper_right.png" alt="" class="w-75">
       </div>
-      <div class="container bg-banner-inner test">
+      <!-- banner -->
+      <div class="container bg-banner-inner">
         <div>
           <h1 class="test EB-Garamond text-primary">
             The F2E
