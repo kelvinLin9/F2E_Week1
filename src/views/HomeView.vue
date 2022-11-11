@@ -46,8 +46,8 @@
       <!-- banner -->
       <div class="container bg-banner-inner position-relative">
         <!-- 1 -->
-        <div class="test my-5">
-          <h1 class="EB-Garamond text-primary my-3 test">
+        <div class="pt-3 ms-2">
+          <h1 class="EB-Garamond text-primary my-3">
             The F2E
             <span class="Roboto text-white bg-danger px-3 rounded-3">
               4th
@@ -55,29 +55,32 @@
           </h1>
         </div>
         <!-- 2 -->
-        <div class="container my-5">
+        <div class="container">
           <div class="row justify-content-between">
             <div class="col">
-              <h2 class="Noto-Serif-TC text-primary test">
+              <h2 class="Noto-Serif-TC text-primary">
                 前端工程師和介面設計師，攜手合作拿獎金
               </h2>
             </div>
-            <div class="col">
-              <div class="">
-                報名總人數<span>1158人</span>
+            <div class="col text-end sign-up-num me-5">
+              <div class="Noto-Serif-TC">
+                報名總人數
+                <span class="EB-Garamond">1158</span>人
               </div>
-              <div>
-                報名總人數<span>1052人</span>
+              <div class="Noto-Serif-TC">
+                報名總人數
+                <span class="EB-Garamond">1052</span>人
               </div>
-              <div>
-                報名總人數<span>41人</span>
+              <div class="Noto-Serif-TC">
+                報名總人數
+                <span class="EB-Garamond">41</span>人
               </div>
             </div>
           </div>
         </div>
         <!-- 3 -->
-        <div class="test">
-          <p class="Noto-Serif-TC text-primary test">
+        <div class="ms-5">
+          <p class="Noto-Serif-TC text-primary">
             羨慕別人的酷酷網頁動畫？滿足不了同事的許願？動畫技能樹太雜無從下手？
           </p>
         </div>
@@ -99,7 +102,9 @@
             </span>
           </p>
         </div>
+        <div class="mouse scroll absolute"></div>
 
+        <div class="scroll absolute" id="swipe-animation"></div>
       </div>
     </section>
   </div>
@@ -139,6 +144,12 @@ export default {
   top: 300px;
   z-index: 10;
 }
+.sign-up-num{
+  font-size: 28px;
+  span {
+    font-size: 50px;
+  }
+}
 .bg-banner {
   background-image: url(../assets/images/banner.png);
 }
@@ -175,6 +186,7 @@ export default {
 .task {
   top: -50px;
   right: -50px;
+  opacity: 0
 }
 .v {
   top: 250px;

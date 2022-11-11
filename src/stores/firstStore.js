@@ -14,6 +14,9 @@ export default defineStore('firstStore', {
           scrub: true
         }
       }) // global animation
+      scrollTL.to('.scroll', {
+        opacity: 0
+      })
       scrollTL.to('.newspaper-up', {
         yPercent: '-100'
       })
@@ -25,6 +28,9 @@ export default defineStore('firstStore', {
       }, '<')
       scrollTL.to('.v', {
         yPercent: '-35'
+      })
+      scrollTL.to('.task', {
+        opacity: 1
       })
     }
   }
