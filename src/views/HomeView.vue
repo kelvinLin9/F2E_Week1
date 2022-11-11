@@ -102,6 +102,7 @@
             </span>
           </p>
         </div>
+        <!-- 滑鼠，還需要研究 -->
         <div class="mouse scroll absolute"></div>
 
         <div class="scroll absolute" id="swipe-animation"></div>
