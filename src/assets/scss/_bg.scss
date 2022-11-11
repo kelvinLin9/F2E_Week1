@@ -1,0 +1,54 @@
+.bg-third{
+  --tw-bg-opacity: 1;
+  background-color: rgb(149 18 5 / var(--tw-bg-opacity));
+}
+.bg-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 36 27 / var(--tw-bg-opacity));
+}
+.bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 225 202 / var(--tw-bg-opacity));
+}
+// .bg-banner-mobile{
+//   background-image: url(../images/banner_mobile.png);
+// }
+// .bg-block-mobile{
+//   background-image: url(../images/section_background_mobile.png);
+// }
+// .bg-teacher1{
+//   background-image: url(../images/teacher1.gif);
+// }
+// .bg-teacher_name{
+//   background-image: url(../images/teacher_name_bg.png);
+// }
+// .bg-teacher2{
+//   background-image: url(../images/teacher2.gif);
+// }
+// .bg-teacher3{
+//   background-image: url(../images/teacher3.gif);
+// }
+// .bg-teacher4{
+//   background-image: url(../images/teacher4.gif);
+// }
+// .bg-web-mobile{
+//   background-image: url(../images/web-bg.png);
+// }
+// .bg-web{
+//   background-image: url(../images/background.png);
+// }
+.bg-cover{
+  background-size: cover;
+}
+.bg-contain{
+  background-size: contain;
+}
+.bg-top{
+  background-position: top;
+}
+.bg-center{
+  background-position: center;
+}
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}

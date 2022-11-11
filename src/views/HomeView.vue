@@ -30,8 +30,8 @@
       </nav>
     </header> -->
   </div>
-  <div class="">
-    <section class="position-relative vh-100 test overflow-hidden">
+  <div class="banner bg-banner">
+    <section class="position-relative vh-100 test overflow-hidden ">
       <div class="w-100 position-absolute newspaper-up">
         <img src="../assets/images/newspaper_up.png" alt="" class="w-100 ">
       </div>
@@ -41,16 +41,73 @@
       <div class="w-100 position-absolute newspaper-right">
         <img src="../assets/images/newspaper_right.png" alt="" class="w-75">
       </div>
+      <div class="container bg-banner-inner test">
+        <div>
+          <h1 class="test EB-Garamond text-primary">
+            The F2E
+            <span class="Roboto text-white bg-danger px-3 rounded-3">4th</span>
+          </h1>
+          <h2 class="Noto-Serif-TC text-primary">
+            前端工程師和介面設計師，攜手合作拿獎金
+          </h2>
+          <p>
+            羨慕別人的酷酷網頁動畫？滿足不了同事的許願？動畫技能樹太雜無從下手？
+          </p>
+        </div>
+        <div>
+          <img src="../assets/images/wanted.png" alt="">
+        </div>
+        <div>
+          <img src="../assets/images/v.png" alt="">
+          <p>
+            個人獎
+            <span class="">
+              $13,000
+            </span>
+            團體獎
+            <span class="">
+              $110,000
+            </span>
+          </p>
+        </div>
+        <div>
+          <h2>
+            前端工程師和介面設計師，攜手合作拿獎金
+          </h2>
+          <p>
+            羨慕別人的酷酷網頁動畫？滿足不了同事的許願？動畫技能樹太雜無從下手？
+          </p>
+        </div>
+        <ul class="">
+          <li class="">報名總人數 1158人</li>
+          <li class="">報名總人數 1052人</li>
+          <li>報名總人數 41人</li>
+        </ul>
+      </div>
     </section>
   </div>
-  7788995
+  <br><br><br><br><br><br><br><br><br><br><br>
 </template>
 
 <script>
-
+import { mapActions } from 'pinia'
+import firstStore from '@/stores/firstStore'
+export default {
+  methods: {
+    ...mapActions(firstStore, ['bannerAnimation']),
+    ok () {
+      // console.log(12345)
+      // gsap.to('.newspaper-up', { opacity: 0, duration: 1, repeat: -1 })
+    }
+  },
+  mounted () {
+    this.bannerAnimation()
+    this.ok()
+  }
+}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .newspaper-up {
   top: -150px;
   z-index: 20;
@@ -64,5 +121,38 @@
   right: -750px;
   top: 300px;
   z-index: 10;
+}
+.bg-banner {
+  background-image: url(../assets/images/banner.png);
+}
+.bg-banner-inner {
+  background-image: url(../assets/images/banner_inner.png);
+  width: 1213px;
+  height: 597px;
+  margin-top: 101px;
+  h1 {
+    width: 320px;
+    height: 104px;
+    font-size: 61px;
+    margin-left: 22px;
+    span {
+      font-size: 32px;
+    }
+  }
+  h2 {
+    width: 320px;
+    height: 104px;
+    font-size: 42px;
+    margin-left: 22px;
+    p {
+      font-size: 24px;
+    }
+  }
+}
+.bg-banner-mobile{
+  background-image: url(../assets/images/banner_mobile.png);
+}
+.bg-block-mobile{
+  background-image: url(../assets/images/section_background_mobile.png);
 }
 </style>
