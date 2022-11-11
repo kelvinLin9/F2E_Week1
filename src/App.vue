@@ -9,9 +9,4 @@
 
 <style lang="scss">
 @import "./assets/scss/all.scss";
-body {
-  outline: solid 1px #000;
-  display: flex;
-  justify-content: center;
-}
 </style>
