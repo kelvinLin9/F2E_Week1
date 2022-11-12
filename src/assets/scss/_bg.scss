@@ -10,6 +10,15 @@
   --tw-bg-opacity: 1;
   background-color: rgb(238 225 202 / var(--tw-bg-opacity));
 }
+.bg-full {
+  background-image: url(~assets/images/background.png);
+}
+.bg-banner {
+  background-image: url(~assets/images/banner.png);
+}
+.bg-section {
+  background-image: url(~assets/images/section_background.png);
+}
 // .bg-banner-mobile{
 //   background-image: url(../images/banner_mobile.png);
 // }

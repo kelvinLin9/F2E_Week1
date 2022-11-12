@@ -4,7 +4,9 @@
     <router-link to="/about">About</router-link>
     7788995
   </nav> -->
-  <router-view/>
+  <div class="bg-full">
+    <router-view/>
+  </div>
 </template>
 
 <style lang="scss">
