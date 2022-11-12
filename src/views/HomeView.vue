@@ -263,7 +263,9 @@
       </div>
     </div>
     <div>
-      <p>初選：將由六角學院前端、UI 評審進行第一波篩選，並於 12/5（五）公布初選佳作名單。<br>決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於 12/23（五）公布企業得獎名單。</p>
+      <p class="fs-24">
+        初選：將由六角學院前端、UI 評審進行第一波篩選，並於 12/5（五）公布初選佳作名單。<br>決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於 12/23（五）公布企業得獎名單。
+      </p>
     </div>
     <div class="Noto-Serif-TC text-center bg-primary text-white py-5 ">
       <h2>
@@ -296,6 +298,67 @@
     <div class="Noto-Serif-TC text-center">
       <h2 class="text-primary">意想不到的好康</h2>
       <h2 class="text-danger">請點擊</h2>
+    </div>
+    <div class="Noto-Serif-TC text-center bg-primary text-white py-5 ">
+      <h2>
+        各界大神直播分享
+      </h2>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-6 bg-teacher1 text-center m-5">
+          <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4">
+            <h2>
+              網站的動態趨勢
+            </h2>
+            <p>
+              李明<br>版塊設計創辦人兼總監
+            </p>
+            <p>
+              11/13(四)20:00 ~ 21:30
+            </p>
+          </a>
+        </div>
+        <div class="col-6 bg-teacher2 text-center m-5">
+          <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4">
+            <h2>
+              jQuery也可以做到的互動效果
+            </h2>
+            <p>
+              Leo<br>Angular Taiwan 傳教士
+            </p>
+            <p>
+              11/10(四)20:00 ~ 21:30
+            </p>
+          </a>
+        </div>
+        <div class="col-6 bg-teacher3 text-center m-5">
+          <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4">
+            <h2>
+              網頁可以拖拖拉拉draggable.js 介紹
+            </h2>
+            <p>
+              邱繼緯<br>前端工程師
+            </p>
+            <p>
+              11/17(四)20:00 ~ 21:30
+            </p>
+          </a>
+        </div>
+        <div class="col-6 bg-teacher4 text-center m-5">
+          <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4">
+            <h2>
+              互動式網頁設計工程師該具備哪些技能？
+            </h2>
+            <p>
+              吳哲宇<br>墨雨互動設計 創辦人
+            </p>
+            <p>
+              11/24(四)20:00 ~ 21:30
+            </p>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
