@@ -215,6 +215,7 @@
       </div>
     </div>
   </section>
+
   <section class="" id="">
     <div class="Noto-Serif-TC text-center bg-primary text-white py-5 ">
       <h2>
@@ -225,7 +226,8 @@
     <div class="">
       <!-- swiper-wrapper -->
       <div class="d-flex justify-content-center test my-5">
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5 test">
+        <div class="timeline"></div>
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto Sans TC test">
           <h3>開始報名</h3>
           <div class="bg-primary diamond my-3 mx-3"></div>
           <p class="">10/13(四) 早上 11:00<br>至 11/6(日) 晚上 23:59</p>
@@ -246,12 +248,75 @@
           <p class="">11/3 至 11/24(每週四)<br>...</p>
         </div>
       </div>
+      <div class="d-flex justify-content-center test my-5">
+        <div class="timeline"></div>
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto Sans TC test">
+          <h3>初選</h3>
+          <div class="bg-primary diamond my-3 mx-3"></div>
+          <p class="">12/05(五)</p>
+        </div>
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 test">
+          <h3>決選</h3>
+          <div class="bg-primary diamond my-3"></div>
+          <p class="">12/05(五)</p>
+        </div>
+      </div>
     </div>
     <div>
       <p>初選：將由六角學院前端、UI 評審進行第一波篩選，並於 12/5（五）公布初選佳作名單。<br>決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於 12/23（五）公布企業得獎名單。</p>
     </div>
+    <div class="Noto-Serif-TC text-center bg-primary text-white py-5 ">
+      <h2>
+        獎項
+      </h2>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col position-relative">
+          <img src="../assets/images/group_award.png" alt="group_award">
+          <div class="position-absolute bg-danger rounded-2 text-white bonus text-center pt-2">$10,000(3名)</div>
+          <p class="text-center">每個關卡各一組</p>
+        </div>
+        <div class="col position-relative">
+          <img src="../assets/images/shortlisted_award.png" alt="">
+          <div class="position-absolute bg-danger rounded-2 text-white bonus text-center pt-2">$3,000(6名)</div>
+          <p class="text-center">每個關卡各2名，<br>設計一名，前端一名</p>
+        </div>
+        <div class="col position-relative">
+          <img src="../assets/images/person_award.png" alt="">
+          <div class="position-absolute bg-danger rounded-2 text-white bonus text-center pt-2">數位獎狀(60名)</div>
+          <p class="text-center">每個關卡個人組十位，<br>團體組十組</p>
+        </div>
+      </div>
+
+    </div>
   </section>
-  <br><br><br><br><br><br><br><br><br><br><br>
+
+  <section class="my-5" id="">
+    <div class="Noto-Serif-TC text-center">
+      <h2 class="text-primary">意想不到的好康</h2>
+      <h2 class="text-danger">請點擊</h2>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <div class="bg-white d-flex justify-content-around py-3">
+        <img src="../assets/images/jira.png" alt="">
+        <img src="../assets/images/confluence.png" alt="">
+        <img src="../assets/images/miro.png" alt="">
+        <img src="../assets/images/dotted.png" alt="">
+      </div>
+      <div class="bg-primary">
+        <h2 class="Noto-Serif-TC text-white text-center pt-5">贊助單位</h2>
+        <div class="d-flex justify-content-around py-5">
+          <img src="../assets/images/blockstudio.png" alt="">
+          <img src="../assets/images/kdan.png" alt="">
+          <img src="../assets/images/titan.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -359,5 +424,24 @@ export default {
   width: 50px;
   height: 50px;
   transform: rotate(45deg)
+}
+.timeline {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 5px;
+    top: 150px;
+    left: 100px;
+    background-color:#38241B;
+  }
+}
+.bonus {
+  width: 232px;
+  height: 62px;
+  font-size: 30px;
+  left: 90px;
+  top: 300px;
 }
 </style>
