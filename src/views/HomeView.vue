@@ -386,20 +386,21 @@
   </section>
 
   <footer>
-    <div>
-      <div class="bg-white d-flex justify-content-around py-3">
-        <img src="../assets/images/jira.png" alt="">
-        <img src="../assets/images/confluence.png" alt="">
-        <img src="../assets/images/miro.png" alt="">
-        <img src="../assets/images/dotted.png" alt="">
+    <div class="bg-white d-flex justify-content-center py-3">
+      <img src="../assets/images/jira.png" alt="" class="px-5">
+      <img src="../assets/images/confluence.png" alt="" class="px-5">
+      <img src="../assets/images/miro.png" alt="" class="px-5">
+      <img src="../assets/images/dotted.png" alt="" class="px-5">
+    </div>
+    <div class="bg-primary">
+      <h2 class="Noto-Serif-TC text-white text-center pt-5">贊助單位</h2>
+      <div class="d-flex justify-content-around py-5">
+        <img src="../assets/images/blockstudio.png" alt="blockstudio">
+        <img src="../assets/images/kdan.png" alt="kdan">
+        <img src="../assets/images/titan.png" alt="titan">
       </div>
-      <div class="bg-primary">
-        <h2 class="Noto-Serif-TC text-white text-center pt-5">贊助單位</h2>
-        <div class="d-flex justify-content-around py-5">
-          <img src="../assets/images/blockstudio.png" alt="">
-          <img src="../assets/images/kdan.png" alt="">
-          <img src="../assets/images/titan.png" alt="">
-        </div>
+      <div class="text-white text-center Noto-Serif-TC pb-3">
+        六角日報 © Code: <a href="https://github.com/kelvinLin9" class="text-danger text-decoration-none">Kelvin Lin</a>   /  Design: <a href="https://www.behance.net/KT_Designer" class="text-danger text-decoration-none">KT</a>
       </div>
     </div>
   </footer>
@@ -424,7 +425,8 @@ export default {
       swipeUp,
       loading,
       scrollDown,
-      isLoading: false
+      isLoading: false,
+      freeGoodies: false
     }
   },
   computed: {
