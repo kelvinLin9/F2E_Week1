@@ -113,7 +113,7 @@
     </div>
     <!-- 三版塊 -->
     <div class=" mt-5 d-flex flex-column align-items-center">
-      <div class="cooperation bg-primary mb-5">
+      <div class="cooperation bg-primary mb-5" data-aos="fade-right" data-aos-duration="2000">
         <div class="d-flex justify-content-between align-items-center py-2 px-3">
           <div class="name text-white Noto-Sans-TC">
             <p>視差滾動 Parallax Scrolling</p>
@@ -144,7 +144,7 @@
           </div>
         </div>
       </div>
-      <div class="cooperation bg-primary mb-5">
+      <div class="cooperation bg-primary mb-5" data-aos="fade-left" data-aos-duration="2000">
         <div class="d-flex justify-content-between align-items-center py-2 px-3">
           <div class="name text-white Noto-Sans-TC">
             <p>線上簽署 Canvas</p>
@@ -175,7 +175,7 @@
           </div>
         </div>
       </div>
-      <div class="cooperation bg-primary mb-5">
+      <div class="cooperation bg-primary mb-5" data-aos="fade-right" data-aos-duration="2000">
         <div class="d-flex justify-content-between align-items-center py-2 px-3">
           <div class="name text-white Noto-Sans-TC">
             <p>Scrum JS draggable</p>
@@ -209,147 +209,170 @@
     </div>
   </section>
 
-  <section class="" id="">
-    <div class="Noto-Serif-TC text-center bg-primary text-white py-5 ">
-      <h2>
-        賽程時間
-      </h2>
-    </div>
+  <section class="my-5" id="">
+    <h2 class="Noto-Serif-TC fs-60 text-center bg-primary text-white py-5">
+      賽程時間
+    </h2>
     <!-- swiper -->
     <div class="">
       <!-- swiper-wrapper -->
       <div class="d-flex justify-content-center my-5">
-        <div class="timeline"></div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC">
-          <h3>開始報名</h3>
-          <div class="bg-primary diamond my-3 mx-3"></div>
+        <div class="timeline1"></div>
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC schedule">
+          <h3 class="fs-30">開始報名</h3>
+          <div class="bg-primary diamond my-3 mx-3"
+              :class="{'bg-danger': dateline[0]}"
+          >
+          </div>
           <p class="">10/13(四) 早上 11:00<br>至 11/6(日) 晚上 23:59</p>
         </div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5">
-          <h3>開賽</h3>
-          <div class="bg-primary diamond my-3"></div>
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC schedule">
+          <h3 class="fs-30">開賽</h3>
+          <div class="bg-primary diamond my-3"
+              :class="{'bg-danger': dateline[1]}"
+          >
+          </div>
           <p class="">UI組、團體組開賽 10/31<br>前端組開賽 11 /7</p>
         </div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5">
-          <h3>登陸作品</h3>
-          <div class="bg-primary diamond my-3"></div>
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC schedule">
+          <h3 class="fs-30">登陸作品</h3>
+          <div class="bg-primary diamond my-3"
+              :class="{'bg-danger': dateline[2]}"
+          >
+          </div>
           <p class="">10/31(一) 中午 12:00<br>至11/28(一) 中午 12:00</p>
         </div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5">
-          <h3>線上直播</h3>
-          <div class="bg-primary diamond my-3"></div>
-          <p class="">11/3 至 11/24(每週四)<br>...</p>
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC schedule">
+          <h3 class="fs-30">線上直播</h3>
+          <div class="bg-primary diamond my-3"
+              :class="{'bg-danger': dateline[3]}"
+          >
+          </div>
+          <p class="">11/3 至 11/24(每週四)<br>&emsp;</p>
         </div>
       </div>
       <div class="d-flex justify-content-center my-5">
-        <div class="timeline"></div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC">
-          <h3>初選</h3>
-          <div class="bg-primary diamond my-3 mx-3"></div>
-          <p class="">12/05(五)</p>
+        <div class="timeline2"></div>
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC schedule">
+          <h3 class="fs-30">初選</h3>
+          <div class="bg-primary diamond my-3 mx-3"
+              :class="{'bg-danger': dateline[4]}"
+          >
+          </div>
+          <p class="">12/05(五)<br>&emsp;</p>
         </div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5">
-          <h3>決選</h3>
-          <div class="bg-primary diamond my-3"></div>
-          <p class="">12/05(五)</p>
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC schedule">
+          <h3 class="fs-30">決選</h3>
+          <div class="bg-primary diamond my-3"
+              :class="{'bg-danger': dateline[5]}"
+          >
+          </div>
+          <p class="">12/05(五)<br>&emsp;</p>
         </div>
       </div>
     </div>
-    <div>
-      <p class="fs-24">
-        初選：將由六角學院前端、UI 評審進行第一波篩選，並於 12/5（五）公布初選佳作名單。<br>決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於 12/23（五）公布企業得獎名單。
+    <div class="fs-28 Noto-Sans-TC text-center mb-5">
+      <p>
+        初選：將由六角學院前端、UI 評審進行第一波篩選，並於 12/5（五）公布初選佳作名單。
+      </p>
+      <p>
+        決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於 12/23（五）公布企業得獎名單。
       </p>
     </div>
-    <div class="Noto-Serif-TC text-center bg-primary text-white py-5 ">
-      <h2>
-        獎項
-      </h2>
-    </div>
-    <div class="container mt-5">
-      <div class="row">
+    <h2 class="Noto-Serif-TC fs-60 text-center bg-primary text-white py-5">
+      獎項
+    </h2>
+    <div class="container my-5">
+      <div class="row" data-aos="fade-down">
         <div class="col position-relative">
           <img src="../assets/images/group_award.png" alt="group_award">
           <div class="position-absolute bg-danger rounded-2 text-white bonus text-center pt-2">$10,000(3名)</div>
-          <p class="text-center">每個關卡各一組</p>
+          <p class="text-center fs-26 Noto-Sans-TC">每個關卡各1組</p>
         </div>
         <div class="col position-relative">
           <img src="../assets/images/shortlisted_award.png" alt="">
           <div class="position-absolute bg-danger rounded-2 text-white bonus text-center pt-2">$3,000(6名)</div>
-          <p class="text-center">每個關卡各2名，<br>設計一名，前端一名</p>
+          <p class="text-center fs-26 Noto-Sans-TC">每個關卡各2名，<br>設計一名，前端一名</p>
         </div>
         <div class="col position-relative">
           <img src="../assets/images/person_award.png" alt="">
           <div class="position-absolute bg-danger rounded-2 text-white bonus text-center pt-2">數位獎狀(60名)</div>
-          <p class="text-center">每個關卡個人組十位，<br>團體組十組</p>
+          <p class="text-center fs-26 Noto-Sans-TC">每個關卡個人組十位，<br>團體組十組</p>
         </div>
       </div>
-
+      <p class="Noto-Sans-TC fs-36 text-center mt-5">以上皆提供完賽數位獎狀</p>
     </div>
   </section>
 
   <section class="my-5" id="">
-    <div class="Noto-Serif-TC text-center">
-      <h2 class="text-primary">意想不到的好康</h2>
-      <h2 class="text-danger">請點擊</h2>
-    </div>
-    <div class="Noto-Serif-TC text-center bg-primary text-white py-5 ">
-      <h2>
-        各界大神直播分享
+    <div class="Noto-Serif-TC text-center py-5"
+        v-if="!freeGoodies"
+    >
+      <h2 class="text-primary fs-72">意想不到的好康</h2>
+      <h2 class="text-danger fs-72"
+          @click="freeGoodies = true"
+      >
+      請點擊
       </h2>
     </div>
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-6 bg-teacher1 text-center m-5 test">
-          <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4">
-            <h2 class="mt-3">
-              網站的動態趨勢
-            </h2>
-            <p class="mt-auto test">
-              李明<br>版塊設計創辦人兼總監
-            </p>
-            <p class="test">
-              11/13(四)20:00 ~ 21:30
-            </p>
-          </a>
-        </div>
-        <div class="col-6 bg-teacher2 text-center m-5">
-          <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4">
-            <h2>
-              jQuery也可以做到的互動效果
-            </h2>
-            <p>
-              Leo<br>Angular Taiwan 傳教士
-            </p>
-            <p>
-              11/10(四)20:00 ~ 21:30
-            </p>
-          </a>
-        </div>
-        <div class="col-6 bg-teacher3 text-center m-5">
-          <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4">
-            <h2>
-              網頁可以拖拖拉拉draggable.js 介紹
-            </h2>
-            <p>
-              邱繼緯<br>前端工程師
-            </p>
-            <p>
-              11/17(四)20:00 ~ 21:30
-            </p>
-          </a>
-        </div>
-        <div class="col-6 bg-teacher4 text-center m-5">
-          <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4">
-            <h2>
-              互動式網頁設計工程師該具備哪些技能？
-            </h2>
-            <p>
-              吳哲宇<br>墨雨互動設計 創辦人
-            </p>
-            <p>
-              11/24(四)20:00 ~ 21:30
-            </p>
-          </a>
+    <div v-if="freeGoodies">
+    <h2 class="Noto-Serif-TC fs-60 text-center bg-primary text-white py-5">
+      各界大神直播分享
+    </h2>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-6 bg-teacher1 position-relative text-center m-5">
+            <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4" class="text-decoration-none">
+              <h2 class="pt-5 fs-57 Noto-Serif-TC">
+                網站的動態趨勢
+              </h2>
+              <p class="fs-20 speaker Noto-Serif-TC text-white px-4 py-2 test">
+                李明<br>版塊設計創辦人兼總監
+              </p>
+              <p class="fs-35 speaker-time Noto-Serif-TC">
+                11/13(四)20:00 ~ 21:30
+              </p>
+            </a>
+          </div>
+          <div class="col-6 bg-teacher2 position-relative text-center m-5">
+            <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4" class="text-decoration-none">
+              <h2 class="pt-4 fs-49 Noto-Serif-TC">
+                jQuery也可以做到的互動效果
+              </h2>
+              <p class="fs-20 speaker Noto-Serif-TC text-white px-4 py-2 test">
+                Leo<br>Angular Taiwan 傳教士
+              </p>
+              <p class="fs-35 speaker-time Noto-Serif-TC">
+                11/10(四)20:00 ~ 21:30
+              </p>
+            </a>
+          </div>
+          <div class="col-6 bg-teacher3 position-relative text-center m-5">
+            <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4" class="text-decoration-none">
+              <h2 class="pt-4 fs-46 Noto-Serif-TC">
+                網頁可以拖拖拉拉draggable.js 介紹
+              </h2>
+              <p class="fs-20 speaker Noto-Serif-TC text-white px-4 py-2 test">
+                邱繼緯<br>前端工程師
+              </p>
+              <p class="fs-35 speaker-time Noto-Serif-TC">
+                11/17(四)20:00 ~ 21:30
+              </p>
+            </a>
+          </div>
+          <div class="col-6 bg-teacher4 position-relative text-center m-5">
+            <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4" class="text-decoration-none">
+              <h2 class="pt-4 fs-44 Noto-Serif-TC">
+                互動式網頁設計工程師該具備哪些技能？
+              </h2>
+              <p class="fs-20 speaker Noto-Serif-TC text-white px-4 py-2 test">
+                吳哲宇<br>墨雨互動設計 創辦人
+              </p>
+              <p class="fs-35 speaker-time Noto-Serif-TC">
+                11/24(四)20:00 ~ 21:30
+              </p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -376,19 +399,30 @@
 </template>
 
 <script>
-import { mapActions } from 'pinia'
+import { mapState, mapActions } from 'pinia'
 import firstStore from '@/stores/firstStore'
+import timeStore from '@/stores/timeStore'
+import AOS from 'aos'
+import swiperUp from '@/assets/json/swipe_up.json'
 export default {
-  methods: {
-    ...mapActions(firstStore, ['bannerAnimation']),
-    ok () {
-      // console.log(12345)
-      // gsap.to('.newspaper-up', { opacity: 0, duration: 1, repeat: -1 })
+  data () {
+    return {
+      freeGoodies: false,
+      defaultOptions: { animationData: swiperUp },
+      animationSpeed: 1,
+      anim: {}
     }
   },
+  computed: {
+    ...mapState(timeStore, ['dateline'])
+  },
+  methods: {
+    ...mapActions(firstStore, ['bannerAnimation']),
+    ...mapActions(timeStore, ['getTime'])
+  },
   mounted () {
-    this.bannerAnimation()
-    this.ok()
+    AOS.init()
+    this.getTime()
   }
 }
 </script>
@@ -476,20 +510,36 @@ export default {
   font-size: 44px;
 }
 // 第三部分
+.schedule {
+  width: 238px;
+  height: 238px;
+}
 .diamond {
   width: 50px;
   height: 50px;
   transform: rotate(45deg)
 }
-.timeline {
+.timeline1 {
   position: relative;
   &::after {
     content: '';
     position: absolute;
-    width: 800px;
+    width: 1000px;
     height: 5px;
-    top: 150px;
-    left: 100px;
+    top: 106px;
+    left: 180px;
+    background-color:#38241B;
+  }
+}
+.timeline2 {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 5px;
+    top: 106px;
+    left: 180px;
     background-color:#38241B;
   }
 }
@@ -499,5 +549,19 @@ export default {
   font-size: 30px;
   left: 90px;
   top: 300px;
+}
+// 第四部份
+.speaker {
+  background-image: url(../assets/images/teacher_name_bg.png);
+  width: 259px;
+  height: 76px;
+  position: absolute;
+  top: 580px;
+  left: 134px;
+}
+.speaker-time {
+position: absolute;
+top: 660px;
+left: 63px;
 }
 </style>
