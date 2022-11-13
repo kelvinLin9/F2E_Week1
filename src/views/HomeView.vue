@@ -126,12 +126,13 @@
             <p>視差滾動 Parallax Scrolling</p>
           </div>
           <div>
-            <img src="../assets/images/blockstudio.png" alt="">
+            <img src="../assets/images/blockstudio.png" alt="" >
           </div>
         </div>
         <div class="bg-section d-flex justify-content-around align-items-center">
-          <div class="p-5">
+          <div class="p-5 position-relative">
             <img src="../assets/images/F2Edesign.png" alt="">
+            <Vue3Lottie :animationData="scrollDown" class="scrollDown3 text-white"/>
           </div>
           <div class="m-5" style="max-width: 600px">
             <h3 class="p-3 Noto-Serif-TC">
@@ -312,15 +313,16 @@
   </section>
 
   <section class="my-5" id="">
-    <div class="Noto-Serif-TC text-center py-5"
+    <div class="Noto-Serif-TC text-center py-5 position-relative"
         v-if="!freeGoodies"
     >
       <h2 class="text-primary fs-72">意想不到的好康</h2>
-      <h2 class="text-danger fs-72"
-          @click="freeGoodies = true"
+      <a href="#" class="text-danger fs-72 text-decoration-none"
+        @click.prevent="freeGoodies = true"
       >
       請點擊
-      </h2>
+      </a>
+      <Vue3Lottie :animationData="loading" class="loading-icon2"/>
     </div>
     <div v-if="freeGoodies">
     <h2 class="Noto-Serif-TC fs-60 text-center bg-primary text-white py-5">
@@ -563,6 +565,14 @@ export default {
   width: 1200px;
   height: 9px;
 }
+.scrollDown3 {
+  width: 60px;
+  height: 88px;
+  position: absolute;
+  top: 43%;
+  left: 43%;
+  z-index:1000;
+}
 .cooperation {
   width: 1200px;
   height: 528px;
@@ -612,6 +622,14 @@ export default {
   top: 300px;
 }
 // 第四部份
+.loading-icon2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 70%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+  }
 .speaker {
   background-image: url(../assets/images/teacher_name_bg.png);
   width: 259px;
