@@ -10,7 +10,7 @@ export default defineStore('firstStore', {
         scrollTrigger: {
           trigger: '#banner',
           pin: true,
-          markers: true,
+          // markers: true,
           scrub: true
         }
       }) // global animation
