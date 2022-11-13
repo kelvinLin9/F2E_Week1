@@ -2,39 +2,31 @@
   <!-- 包整個banner再看有沒有需要 -->
   <section class="">
     <!-- navbar -->
-    <div class="container">
-      <!-- <header class="header fixed z-[100] w-full opacity-0">
-        <nav class="bg-secondary" id="nav">
-          <div class="container flex justify-between items-center px-10">
-            <img src="./assets/images/menu.svg" alt="menu" class="menu w-[50px] h-[50px] my-[5px] md:hidden">
-            <div class="logo hidden md:block py-[13.5px]">
-              <a href="#"><img src="./assets/images/hex-logo.png" alt="logo"></a>
-            </div>
-            <ul class="nav-links flex justify-between items-center">
-              <li class="hidden md:inline"><a href="#challenge"
-                  class="text-white text-lg mr-9 hover:opacity-50 transition">關卡任務</a></li>
-              <li class="hidden md:inline"><a href="#eventTime"
-                  class="text-white text-lg mr-[15px] hover:opacity-50 transition">競賽說明</a></li>
-              <li><a href="https://2022.thef2e.com/users"
-                  class="bg-third text-white text-xl font-medium rounded-[40px] px-[25px] py-[5.63px] drop-shadow-button transition duration-475 hover:bg-primary hover:text-black">立即報名</a>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="mobile-nav-links bg-secondary w-full absolute left-0 top-0 z-10 transition duration-475 ease-in-out transform -translate-x-full md:hidden"
-            id="mobile-nav-links">
-            <ul>
-              <a href="#" class="my-[8.08px]"><img src="./assets/images/close.svg" alt="close"
-                  class="close p-[10px] md:hidden"></a>
-              <li class="text-center mb-6"><a href="#challenge" class="text-white text-lg w-full ">關卡任務</a></li>
-              <li class="text-center mb-10"><a href="#eventTime" class="text-white text-lg w-full ">競賽說明</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header> -->
-    </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-5" href="#">
+          <img src="../assets/images/hex-logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
+            <li class="nav-item">
+              <a class="nav-link fs-18 text-white" aria-current="page" href="#">關卡任務</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-18 text-white" href="#">競賽說明</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-18 text-white bg-danger rounded-pill px-5" href="#">立即報名</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="banner bg-banner" id="banner">
 
-    <div class="banner bg-banner test" id="banner">
       <!-- 主題 -->
       <div class="position-relative vh-100 overflow-hidden">
         <div class="w-100 position-absolute newspaper-up">
@@ -112,6 +104,7 @@
       </div>
     </div>
   </section>
+
   <section class="" id="">
     <div class="mt-5 d-flex flex-column align-items-center">
       <img src="../assets/images/hexschool.png" alt="">
@@ -225,37 +218,37 @@
     <!-- swiper -->
     <div class="">
       <!-- swiper-wrapper -->
-      <div class="d-flex justify-content-center test my-5">
+      <div class="d-flex justify-content-center my-5">
         <div class="timeline"></div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto Sans TC test">
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC">
           <h3>開始報名</h3>
           <div class="bg-primary diamond my-3 mx-3"></div>
           <p class="">10/13(四) 早上 11:00<br>至 11/6(日) 晚上 23:59</p>
         </div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5 test">
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5">
           <h3>開賽</h3>
           <div class="bg-primary diamond my-3"></div>
           <p class="">UI組、團體組開賽 10/31<br>前端組開賽 11 /7</p>
         </div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5 test">
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5">
           <h3>登陸作品</h3>
           <div class="bg-primary diamond my-3"></div>
           <p class="">10/31(一) 中午 12:00<br>至11/28(一) 中午 12:00</p>
         </div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5 test">
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5">
           <h3>線上直播</h3>
           <div class="bg-primary diamond my-3"></div>
           <p class="">11/3 至 11/24(每週四)<br>...</p>
         </div>
       </div>
-      <div class="d-flex justify-content-center test my-5">
+      <div class="d-flex justify-content-center my-5">
         <div class="timeline"></div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto Sans TC test">
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC">
           <h3>初選</h3>
           <div class="bg-primary diamond my-3 mx-3"></div>
           <p class="">12/05(五)</p>
         </div>
-        <div class="d-flex flex-column justify-content-around align-items-center mx-5 test">
+        <div class="d-flex flex-column justify-content-around align-items-center mx-5">
           <h3>決選</h3>
           <div class="bg-primary diamond my-3"></div>
           <p class="">12/05(五)</p>
@@ -306,15 +299,15 @@
     </div>
     <div class="container my-5">
       <div class="row">
-        <div class="col-6 bg-teacher1 text-center m-5">
+        <div class="col-6 bg-teacher1 text-center m-5 test">
           <a href="https://www.youtube.com/watch?v=9gzDFKTIFB4">
-            <h2>
+            <h2 class="mt-3">
               網站的動態趨勢
             </h2>
-            <p>
+            <p class="mt-auto test">
               李明<br>版塊設計創辦人兼總監
             </p>
-            <p>
+            <p class="test">
               11/13(四)20:00 ~ 21:30
             </p>
           </a>
