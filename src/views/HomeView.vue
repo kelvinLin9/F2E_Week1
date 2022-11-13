@@ -1,5 +1,9 @@
-<template class="">
-  <!-- 包整個banner再看有沒有需要 -->
+<template>
+  <!-- <section class="container-fluid bg-full loading Noto-Sans-TC">
+    <Vue3Lottie :animationData="loading" class="loading-icon"/>
+    <p class="loading-text1 fs-23">努力加載中...</p>
+    <p class="loading-text2 fs-20">網站中收集<span class="text-danger">五顆</span>散落的柏蒂豆，即可獲得驚喜唷。</p>
+  </section> -->
   <section class="">
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
@@ -13,20 +17,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
             <li class="nav-item">
-              <a class="nav-link fs-18 text-white" aria-current="page" href="#">關卡任務</a>
+              <a class="nav-link fs-18 text-white" aria-current="page" href="#task">
+                關卡任務
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-18 text-white" href="#">競賽說明</a>
+              <a class="nav-link fs-18 text-white" href="#instructions">
+                競賽說明
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-18 text-white bg-danger rounded-pill px-5" href="#">立即報名</a>
+              <a class="nav-link fs-18 text-white bg-danger rounded-pill px-5" href="https://2022.thef2e.com/users">立即報名</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="banner bg-banner" id="banner">
-
+      <Vue3Lottie :animationData="scrollDown" class="scrollDown1"/>
+      <Vue3Lottie :animationData="scrollDown" class="scrollDown2"/>
       <!-- 主題 -->
       <div class="position-relative vh-100 overflow-hidden">
         <div class="w-100 position-absolute newspaper-up">
@@ -98,14 +107,12 @@
             </p>
           </div>
           <!-- 滑鼠，還需要研究 -->
-          <div class="mouse scroll absolute"></div>
-          <div class="scroll absolute" id="swipe-animation"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="" id="">
+  <section class="" id="task">
     <div class="mt-5 d-flex flex-column align-items-center">
       <img src="../assets/images/hexschool.png" alt="">
       <h2 class="Noto-Sans-TC my-4">年度最強合作，三大關卡來襲</h2>
@@ -209,7 +216,7 @@
     </div>
   </section>
 
-  <section class="my-5" id="">
+  <section class="my-5" id="instructions">
     <h2 class="Noto-Serif-TC fs-60 text-center bg-primary text-white py-5">
       賽程時間
     </h2>
@@ -403,14 +410,21 @@ import { mapState, mapActions } from 'pinia'
 import firstStore from '@/stores/firstStore'
 import timeStore from '@/stores/timeStore'
 import AOS from 'aos'
-import swiperUp from '@/assets/json/swipe_up.json'
+import { Vue3Lottie } from 'vue3-lottie'
+import 'vue3-lottie/dist/style.css'
+import swipeUp from '@/assets/json/swipe_up.json'
+import loading from '@/assets/json/loading.json'
+import scrollDown from '@/assets/json/scroll_down.json'
 export default {
+  components: {
+    Vue3Lottie
+  },
   data () {
     return {
-      freeGoodies: false,
-      defaultOptions: { animationData: swiperUp },
-      animationSpeed: 1,
-      anim: {}
+      swipeUp,
+      loading,
+      scrollDown,
+      isLoading: false
     }
   },
   computed: {
@@ -421,6 +435,7 @@ export default {
     ...mapActions(timeStore, ['getTime'])
   },
   mounted () {
+    this.bannerAnimation()
     AOS.init()
     this.getTime()
   }
@@ -428,6 +443,50 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.loading {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  .loading-icon {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .loading-text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  .loading-text2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.scrollDown1 {
+  width: 60px;
+  height: 88px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index:1000
+}
+.scrollDown2 {
+  width: 60px;
+  height: 88px;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  z-index:1000;
+  opacity: 0;
+}
 .newspaper-up {
   top: -150px;
   z-index: 20;
