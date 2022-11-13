@@ -2,7 +2,7 @@
 
 ## 專案簡介
 
-以賽馬遊戲為主題的NFT購買平台，使用Vue框架練習前端開發
+目前只完成桌面版，手機版後面會在補完
 
 ### Demo
 
@@ -19,12 +19,11 @@ https://kelvinlin9.github.io/F2E_Week1/#/
 
 |  套件   | 簡述  |
 | :----- | :----- |
-| Vue-axios  | 串接 API |
-| Vee-validate  | 表單驗證 |
+| gsap  |  |
+| vue3-lottie  |  |
 | Swiper  | 圖片輪播 |
 | pinia  | 傳遞跨元件資料，作為狀態管理工具。 |
 | AOS  | 實現動畫特效 |
-| Sweetalert2  | 彈出提示窗 |
 
 
 
