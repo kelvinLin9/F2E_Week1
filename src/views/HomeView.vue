@@ -391,17 +391,31 @@
 
   <footer>
     <div class="bg-white d-flex justify-content-center py-3">
-      <img src="../assets/images/jira.png" alt="jira-logo" class="px-5">
-      <img src="../assets/images/confluence.png" alt="confluence-logo" class="px-5">
-      <img src="../assets/images/miro.png" alt="miro-logo" class="px-5">
-      <img src="../assets/images/dotted.png" alt="dotted-logo" class="px-5">
+      <a href="https://titansoft.com/tw/go_jira">
+        <img src="../assets/images/jira.png" alt="jira-logo" class="px-5">
+      </a>
+      <a href="https://www.atlassian.com/software/confluence">
+        <img src="../assets/images/confluence.png" alt="confluence-logo" class="px-5">
+      </a>
+      <a href="https://titansoft.com/tw/get_miro">
+        <img src="../assets/images/miro.png" alt="miro-logo" class="px-5">
+      </a>
+      <a href="https://www.dottedsign.com/zh-tw?utm_source_k=PR&utm_campaign_k=PR_Hexschool_SponsorEvent_2022&utm_medium_k=Hexschool">
+        <img src="../assets/images/dotted.png" alt="dotted-logo" class="px-5">
+      </a>
     </div>
     <div class="bg-primary">
       <h2 class="Noto-Serif-TC text-white text-center pt-5">贊助單位</h2>
       <div class="d-flex justify-content-around py-5">
-        <img src="../assets/images/blockstudio.png" alt="blockstudio-logo">
-        <img src="../assets/images/kdan.png" alt="kdan-logo">
-        <img src="../assets/images/titan.png" alt="titan-logo">
+        <a href="https://blockstudio.tw/">
+          <img src="../assets/images/blockstudio.png" alt="blockstudio-logo">
+        </a>
+        <a href="https://www.kdanmobile.com/zh-tw">
+          <img src="../assets/images/kdan.png" alt="kdan-logo">
+        </a>
+        <a href="https://titansoft.com/tw">
+          <img src="../assets/images/titan.png" alt="titan-logo">
+        </a>
       </div>
       <div class="text-white text-center Noto-Serif-TC pb-3">
         六角日報 © Code: <a href="https://github.com/kelvinLin9" class="text-danger text-decoration-none">Kelvin Lin</a>   /  Design: <a href="https://www.behance.net/KT_Designer" class="text-danger text-decoration-none">KT</a>
