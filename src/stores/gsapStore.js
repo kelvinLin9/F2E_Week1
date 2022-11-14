@@ -44,10 +44,10 @@ export default defineStore('gsapStore', {
       const scrollCha = gsap.timeline({
         scrollTrigger: {
           trigger: '#blockStudio',
-          start: 'top 75%', // 決定動畫開始點的位置
+          start: 'top 75%',
           end: 'top -30%',
           // markers: true,
-          scrub: true // 決定動畫播放是否依賴視窗滾動
+          scrub: true
         }
       })
       scrollCha.from('#blockStudio', {
@@ -69,7 +69,7 @@ export default defineStore('gsapStore', {
         scrollTrigger: {
           trigger: '#awards',
           start: 'top 100%',
-          end: 'top 70%',
+          end: 'top 80%',
           // markers: true,
           scrub: true
         }
