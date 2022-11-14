@@ -116,7 +116,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="challenge">
     <div class="mt-5 d-flex flex-column align-items-center">
       <img src="../assets/images/hexschool.png" alt="hexschool-logo">
       <h2 class="Noto-Sans-TC my-4">年度最強合作，三大關卡來襲</h2>
@@ -124,7 +124,7 @@
     </div>
     <!-- 三版塊 -->
     <div class=" mt-5 d-flex flex-column align-items-center">
-      <div class="cooperation bg-primary mb-5" data-aos="fade-right" data-aos-duration="2000">
+      <div class="cooperation bg-primary mb-5" id="blockStudio">
         <div class="d-flex justify-content-between align-items-center py-2 px-3">
           <div class="name text-white Noto-Sans-TC">
             <p>視差滾動 Parallax Scrolling</p>
@@ -156,7 +156,7 @@
           </div>
         </div>
       </div>
-      <div class="cooperation bg-primary mb-5" data-aos="fade-left" data-aos-duration="2000">
+      <div class="cooperation bg-primary mb-5" id="kdan">
         <div class="d-flex justify-content-between align-items-center py-2 px-3">
           <div class="name text-white Noto-Sans-TC">
             <p>線上簽署 Canvas</p>
@@ -187,7 +187,7 @@
           </div>
         </div>
       </div>
-      <div class="cooperation bg-primary mb-5" data-aos="fade-right" data-aos-duration="2000">
+      <div class="cooperation bg-primary mb-5" id="titan">
         <div class="d-flex justify-content-between align-items-center py-2 px-3">
           <div class="name text-white Noto-Sans-TC">
             <p>Scrum JS draggable</p>
@@ -225,9 +225,7 @@
     <h2 class="Noto-Serif-TC fs-60 text-center bg-primary text-white py-5">
       賽程時間
     </h2>
-    <!-- swiper -->
-    <div class="">
-      <!-- swiper-wrapper -->
+    <div>
       <div class="d-flex justify-content-center my-5">
         <div class="timeline1"></div>
         <div class="d-flex flex-column justify-content-around align-items-center mx-5 Noto-Sans-TC schedule">
@@ -294,8 +292,8 @@
     <h2 class="Noto-Serif-TC fs-60 text-center bg-primary text-white py-5">
       獎項
     </h2>
-    <div class="container my-5">
-      <div class="row" data-aos="fade-down">
+    <div class="container my-5" id="awards">
+      <div class="row" id="qq">
         <div class="col position-relative">
           <img src="../assets/images/group_award.png" alt="group_award">
           <div class="position-absolute bg-danger rounded-2 text-white bonus text-center pt-2">$10,000(3名)</div>
@@ -316,7 +314,7 @@
     </div>
   </section>
 
-  <section class="my-5" id="">
+  <section class="my-5">
     <div class="Noto-Serif-TC text-center py-5 position-relative"
         v-if="!freeGoodies"
     >
@@ -439,7 +437,7 @@ export default {
     ...mapState(timeStore, ['dateline'])
   },
   methods: {
-    ...mapActions(gsapStore, ['bannerAnimation']),
+    ...mapActions(gsapStore, ['bannerAnimation', 'ChallengeAnimation','awardsAnimation']),
     ...mapActions(timeStore, ['getTime']),
     moveToChallenge () {
       window.scrollTo({
@@ -456,6 +454,8 @@ export default {
   },
   mounted () {
     this.bannerAnimation()
+    this.ChallengeAnimation()
+    this.awardsAnimation()
     AOS.init()
     this.getTime()
   }
@@ -580,6 +580,10 @@ export default {
 .two-line {
   width: 1200px;
   height: 9px;
+}
+#challenge {
+  outline: solid 10px red;
+  overflow: hidden;
 }
 .scrollDown3 {
   width: 60px;
