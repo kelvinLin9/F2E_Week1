@@ -1,9 +1,16 @@
 <template>
-  <!-- <section class="bg-full loading Noto-Sans-TC">
-    <Vue3Lottie :animationData="loading" class="loading-icon"/>
-    <p class="loading-text1 fs-23">努力加載中...</p>
-    <p class="loading-text2 fs-20">網站中收集<span class="text-danger">五顆</span>散落的柏蒂豆，即可獲得驚喜唷。</p>
-  </section> -->
+  <div v-if="!isLoading">
+    <section class="bg-full loading Noto-Sans-TC">
+      <Vue3Lottie :animationData="loading" class="loading-icon"/>
+      <p class="loading-text1 fs-23">努力加載中...</p>
+      <p class="loading-text2 fs-20">網站中收集
+        <span class="text-danger">五顆</span>散落的柏蒂豆，即可獲得驚喜唷。
+      </p>
+    </section>
+  </div>
+  <div v-if="!isLoading">
+
+  </div>
 
   <section>
     <!-- navbar -->
