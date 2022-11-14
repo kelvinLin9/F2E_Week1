@@ -9,11 +9,11 @@ export default defineStore('gsapStore', {
       const scrollTL = gsap.timeline({
         scrollTrigger: {
           trigger: '#banner',
-          pin: true,
-          // markers: true,
-          scrub: true
+          pin: true, // 釘選
+          markers: true,
+          scrub: true // 決定動畫播放是否依賴視窗滾動
         }
-      }) // global animation
+      })
       scrollTL.to('.scrollDown1', {
         opacity: 0
       })
