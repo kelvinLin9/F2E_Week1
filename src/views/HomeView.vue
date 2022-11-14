@@ -17,7 +17,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
             <li class="nav-item">
-              <a class="nav-link fs-18 text-white" aria-current="page" href="#task">
+              <a class="nav-link fs-18 text-white" aria-current="page" href="#"
+              @click.prevent="moveToBanner()"
+              >
                 關卡任務
               </a>
             </li>
@@ -436,7 +438,13 @@ export default {
   },
   methods: {
     ...mapActions(firstStore, ['bannerAnimation']),
-    ...mapActions(timeStore, ['getTime'])
+    ...mapActions(timeStore, ['getTime']),
+    moveToBanner () {
+      element.scrollTo({
+        top: -1000, // 向上滚动的距离
+        behavior: 'smooth' // 方式支持参数 smooth(平滑滚动),instant(瞬间滚动),默认值 auto
+      })
+    }
   },
   mounted () {
     this.bannerAnimation()
