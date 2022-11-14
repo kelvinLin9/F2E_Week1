@@ -10,7 +10,7 @@ export default defineStore('gsapStore', {
         scrollTrigger: {
           trigger: '#banner',
           pin: true, // 釘選
-          markers: true,
+          // markers: true,
           scrub: true // 決定動畫播放是否依賴視窗滾動
         }
       })
@@ -46,7 +46,7 @@ export default defineStore('gsapStore', {
           trigger: '#blockStudio',
           start: 'top 75%', // 決定動畫開始點的位置
           end: 'top -30%',
-          markers: true,
+          // markers: true,
           scrub: true // 決定動畫播放是否依賴視窗滾動
         }
       })
@@ -70,7 +70,7 @@ export default defineStore('gsapStore', {
           trigger: '#awards',
           start: 'top 100%',
           end: 'top 70%',
-          markers: true,
+          // markers: true,
           scrub: true
         }
       })
