@@ -17,14 +17,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
             <li class="nav-item">
-              <a class="nav-link fs-18 text-white" aria-current="page" href="#"
-              @click.prevent="moveToBanner()"
+              <a class="nav-link fs-18 text-white" href="#"
+              @click.prevent="moveToChallenge()"
               >
                 關卡任務
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-18 text-white" href="#instructions">
+              <a class="nav-link fs-18 text-white" href="#"
+              @click.prevent="moveToInstructions()"
+              >
                 競賽說明
               </a>
             </li>
@@ -114,7 +116,7 @@
     </div>
   </section>
 
-  <section class="" id="task">
+  <section>
     <div class="mt-5 d-flex flex-column align-items-center">
       <img src="../assets/images/hexschool.png" alt="">
       <h2 class="Noto-Sans-TC my-4">年度最強合作，三大關卡來襲</h2>
@@ -219,7 +221,7 @@
     </div>
   </section>
 
-  <section class="my-5" id="instructions">
+  <section class="my-5">
     <h2 class="Noto-Serif-TC fs-60 text-center bg-primary text-white py-5">
       賽程時間
     </h2>
@@ -439,10 +441,16 @@ export default {
   methods: {
     ...mapActions(firstStore, ['bannerAnimation']),
     ...mapActions(timeStore, ['getTime']),
-    moveToBanner () {
-      element.scrollTo({
-        top: -1000, // 向上滚动的距离
+    moveToChallenge () {
+      window.scrollTo({
+        top: 1780,
         behavior: 'smooth' // 方式支持参数 smooth(平滑滚动),instant(瞬间滚动),默认值 auto
+      })
+    },
+    moveToInstructions() {
+      window.scrollTo({
+        top: 3880,
+        behavior: 'smooth'
       })
     }
   },
