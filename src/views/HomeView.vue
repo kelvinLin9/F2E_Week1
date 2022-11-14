@@ -582,7 +582,6 @@ export default {
   height: 9px;
 }
 #challenge {
-  outline: solid 10px red;
   overflow: hidden;
 }
 .scrollDown3 {
