@@ -9,7 +9,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand ps-5" href="#">
-          <img src="../assets/images/hex-logo.png" alt="">
+          <img src="../assets/images/hex-logo.png" alt="hex-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,13 +43,13 @@
       <!-- 主題 -->
       <div class="position-relative vh-100 overflow-hidden">
         <div class="w-100 position-absolute newspaper-up">
-          <img src="../assets/images/newspaper_up.png" alt="" class="w-100 ">
+          <img src="../assets/images/newspaper_up.png" alt="newspaper_up" class="w-100 ">
         </div>
         <div class="w-100 position-absolute newspaper-left">
-          <img src="../assets/images/newspaper_left.png" alt="" class="w-75">
+          <img src="../assets/images/newspaper_left.png" alt="newspaper_left" class="w-75">
         </div>
         <div class="w-100 position-absolute newspaper-right">
-          <img src="../assets/images/newspaper_right.png" alt="" class="w-75">
+          <img src="../assets/images/newspaper_right.png" alt="newspaper_right" class="w-75">
         </div>
         <!-- banner -->
         <div class="container bg-banner-inner position-relative">
@@ -94,11 +94,11 @@
           </div>
           <!-- 右上懸賞小圖 -->
           <div class="task position-absolute">
-            <img src="../assets/images/wanted.png" alt="">
+            <img src="../assets/images/wanted.png" alt="wanted">
           </div>
           <!-- 怪客圖 -->
           <div class="v position-absolute position-relative">
-            <img src="../assets/images/v.png" alt="">
+            <img src="../assets/images/v.png" alt="v怪客">
             <p class="position-absolute text-white w-100">
               個人獎
               <span class="text-danger">
@@ -118,7 +118,7 @@
 
   <section>
     <div class="mt-5 d-flex flex-column align-items-center">
-      <img src="../assets/images/hexschool.png" alt="">
+      <img src="../assets/images/hexschool.png" alt="hexschool-logo">
       <h2 class="Noto-Sans-TC my-4">年度最強合作，三大關卡來襲</h2>
       <div class="border-top border-bottom border-primary border-3 two-line"></div>
     </div>
@@ -130,12 +130,12 @@
             <p>視差滾動 Parallax Scrolling</p>
           </div>
           <div>
-            <img src="../assets/images/blockstudio.png" alt="" >
+            <img src="../assets/images/blockstudio.png" alt="blockstudio-logo" >
           </div>
         </div>
         <div class="bg-section d-flex justify-content-around align-items-center">
           <div class="p-5 position-relative">
-            <img src="../assets/images/F2Edesign.png" alt="">
+            <img src="../assets/images/F2Edesign.png" alt="F2Edesign">
             <Vue3Lottie :animationData="scrollDown" class="scrollDown3 text-white"/>
           </div>
           <div class="m-5" style="max-width: 600px">
@@ -162,12 +162,12 @@
             <p>線上簽署 Canvas</p>
           </div>
           <div>
-            <img src="../assets/images/kdan.png" alt="">
+            <img src="../assets/images/kdan.png" alt="kdan-logo">
           </div>
         </div>
         <div class="bg-section d-flex justify-content-around align-items-center">
           <div class="p-5">
-            <img src="../assets/images/pdf.png" alt="">
+            <img src="../assets/images/pdf.png" alt="pdf">
           </div>
           <div class="m-5" style="max-width: 600px">
             <h3 class="p-3 Noto-Serif-TC">
@@ -193,12 +193,12 @@
             <p>Scrum JS draggable</p>
           </div>
           <div>
-            <img src="../assets/images/titan.png" alt="">
+            <img src="../assets/images/titan.png" alt="titan-logo">
           </div>
         </div>
         <div class="bg-section d-flex justify-content-around align-items-center">
           <div class="p-5">
-            <img src="../assets/images/scrum.png" alt="">
+            <img src="../assets/images/scrum.png" alt="scrum">
           </div>
           <div class="m-5" style="max-width: 600px">
             <h3 class="p-3 Noto-Serif-TC">
@@ -302,12 +302,12 @@
           <p class="text-center fs-26 Noto-Sans-TC">每個關卡各1組</p>
         </div>
         <div class="col position-relative">
-          <img src="../assets/images/shortlisted_award.png" alt="">
+          <img src="../assets/images/shortlisted_award.png" alt="shortlisted_award">
           <div class="position-absolute bg-danger rounded-2 text-white bonus text-center pt-2">$3,000(6名)</div>
           <p class="text-center fs-26 Noto-Sans-TC">每個關卡各2名，<br>設計一名，前端一名</p>
         </div>
         <div class="col position-relative">
-          <img src="../assets/images/person_award.png" alt="">
+          <img src="../assets/images/person_award.png" alt="person_award">
           <div class="position-absolute bg-danger rounded-2 text-white bonus text-center pt-2">數位獎狀(60名)</div>
           <p class="text-center fs-26 Noto-Sans-TC">每個關卡個人組十位，<br>團體組十組</p>
         </div>
@@ -393,17 +393,17 @@
 
   <footer>
     <div class="bg-white d-flex justify-content-center py-3">
-      <img src="../assets/images/jira.png" alt="" class="px-5">
-      <img src="../assets/images/confluence.png" alt="" class="px-5">
-      <img src="../assets/images/miro.png" alt="" class="px-5">
-      <img src="../assets/images/dotted.png" alt="" class="px-5">
+      <img src="../assets/images/jira.png" alt="jira-logo" class="px-5">
+      <img src="../assets/images/confluence.png" alt="confluence-logo" class="px-5">
+      <img src="../assets/images/miro.png" alt="miro-logo" class="px-5">
+      <img src="../assets/images/dotted.png" alt="dotted-logo" class="px-5">
     </div>
     <div class="bg-primary">
       <h2 class="Noto-Serif-TC text-white text-center pt-5">贊助單位</h2>
       <div class="d-flex justify-content-around py-5">
-        <img src="../assets/images/blockstudio.png" alt="blockstudio">
-        <img src="../assets/images/kdan.png" alt="kdan">
-        <img src="../assets/images/titan.png" alt="titan">
+        <img src="../assets/images/blockstudio.png" alt="blockstudio-logo">
+        <img src="../assets/images/kdan.png" alt="kdan-logo">
+        <img src="../assets/images/titan.png" alt="titan-logo">
       </div>
       <div class="text-white text-center Noto-Serif-TC pb-3">
         六角日報 © Code: <a href="https://github.com/kelvinLin9" class="text-danger text-decoration-none">Kelvin Lin</a>   /  Design: <a href="https://www.behance.net/KT_Designer" class="text-danger text-decoration-none">KT</a>
@@ -414,7 +414,7 @@
 
 <script>
 import { mapState, mapActions } from 'pinia'
-import firstStore from '@/stores/firstStore'
+import gsapStore from '@/stores/gsapStore'
 import timeStore from '@/stores/timeStore'
 import AOS from 'aos'
 import { Vue3Lottie } from 'vue3-lottie'
@@ -439,7 +439,7 @@ export default {
     ...mapState(timeStore, ['dateline'])
   },
   methods: {
-    ...mapActions(firstStore, ['bannerAnimation']),
+    ...mapActions(gsapStore, ['bannerAnimation']),
     ...mapActions(timeStore, ['getTime']),
     moveToChallenge () {
       window.scrollTo({

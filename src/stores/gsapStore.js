@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-export default defineStore('firstStore', {
+export default defineStore('gsapStore', {
   actions: {
     bannerAnimation () {
       gsap.registerPlugin(ScrollTrigger)
