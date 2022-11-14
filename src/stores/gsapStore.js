@@ -4,6 +4,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 export default defineStore('gsapStore', {
   actions: {
+    loadingAnimation () {
+      gsap.to('.loading', {
+        opacity: 0,
+        delay: 5
+      })
+    },
     bannerAnimation () {
       gsap.registerPlugin(ScrollTrigger)
       const scrollTL = gsap.timeline({

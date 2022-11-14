@@ -1,10 +1,11 @@
 <template>
-  <!-- <section class="container-fluid bg-full loading Noto-Sans-TC">
+  <!-- <section class="bg-full loading Noto-Sans-TC">
     <Vue3Lottie :animationData="loading" class="loading-icon"/>
     <p class="loading-text1 fs-23">努力加載中...</p>
     <p class="loading-text2 fs-20">網站中收集<span class="text-danger">五顆</span>散落的柏蒂豆，即可獲得驚喜唷。</p>
   </section> -->
-  <section class="">
+
+  <section>
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
@@ -451,7 +452,7 @@ export default {
     ...mapState(timeStore, ['dateline'])
   },
   methods: {
-    ...mapActions(gsapStore, ['bannerAnimation', 'ChallengeAnimation','awardsAnimation']),
+    ...mapActions(gsapStore, ['bannerAnimation', 'ChallengeAnimation','awardsAnimation', 'loadingAnimation']),
     ...mapActions(timeStore, ['getTime']),
     moveToChallenge () {
       window.scrollTo({
@@ -467,6 +468,7 @@ export default {
     }
   },
   mounted () {
+    this.loadingAnimation()
     this.bannerAnimation()
     this.ChallengeAnimation()
     this.awardsAnimation()
