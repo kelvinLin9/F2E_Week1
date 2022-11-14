@@ -23,9 +23,6 @@ export default defineStore('gsapStore', {
       scrollTL.to('.scrollDown1', {
         opacity: 0
       })
-      scrollTL.to('.scroll', {
-        opacity: 0
-      })
       scrollTL.to('.newspaper-up', {
         yPercent: '-100'
       })
