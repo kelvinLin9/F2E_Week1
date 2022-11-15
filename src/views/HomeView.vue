@@ -8,7 +8,7 @@
       </p>
     </section>
   </div>
-  <div>
+  <div v-if="!isLoading">
     <section>
       <!-- navbar -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
@@ -479,9 +479,9 @@ export default {
     this.ChallengeAnimation()
     this.awardsAnimation()
     this.getTime()
-    // setTimeout(() => {
-    //   this.isLoading = false
-    // }, 5000)
+    setTimeout(() => {
+      this.isLoading = false
+    }, 5000)
     AOS.init()
   }
 }
