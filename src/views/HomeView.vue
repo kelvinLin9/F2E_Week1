@@ -8,7 +8,7 @@
       </p>
     </section>
   </div>
-  <div v-if="!isLoading">
+  <div>
     <section>
       <!-- navbar -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
@@ -471,6 +471,16 @@ export default {
         top: 3880,
         behavior: 'smooth'
       })
+    },
+    scrollStop () {
+      const mo = function (e) { e.preventDefault() }
+      document.body.style.overflow = 'hidden'
+      document.addEventListener('touchmove', mo, false)
+    },
+    scrollMove () {
+      const mo = function (e) { e.preventDefault() }
+      document.body.style.overflow = ''
+      document.removeEventListener('touchmove', mo, false)
     }
   },
   mounted () {
@@ -479,8 +489,9 @@ export default {
     this.ChallengeAnimation()
     this.awardsAnimation()
     this.getTime()
+    this.scrollStop()
     setTimeout(() => {
-      this.isLoading = false
+      this.scrollMove()
     }, 5000)
     AOS.init()
   }
@@ -490,8 +501,8 @@ export default {
 <style lang="scss" scoped>
 .loading {
   position: absolute;
-  width: calc(100vw - 17px);
-  // width: 100vw;
+  // width: calc(100vw - 17px);
+  width: 100vw;
   height: 100vh;
   z-index: 2000;
   .loading-icon {
