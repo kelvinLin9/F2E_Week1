@@ -1,6 +1,6 @@
 <template>
   <div v-if="isLoading">
-    <section class="bg-full loading Noto-Sans-TC">
+    <section class="bg-full loading Noto-Sans-TC position-fixed">
       <Vue3Lottie :animationData="loading" class="loading-icon"/>
       <p class="loading-text1 fs-23">努力加載中...</p>
       <p class="loading-text2 fs-20">網站中收集
@@ -492,6 +492,7 @@ export default {
     this.scrollStop()
     setTimeout(() => {
       this.scrollMove()
+      this.isLoading = false
     }, 5000)
     AOS.init()
   }
