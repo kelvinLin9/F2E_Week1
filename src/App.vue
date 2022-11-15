@@ -6,4 +6,7 @@
 
 <style lang="scss">
 @import "./assets/scss/all.scss";
+body {
+  overflow-x: hidden;
+}
 </style>
