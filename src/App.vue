@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-full overflow-hidden relative">
+  <div class="bg-full">
     <router-view/>
   </div>
 </template>
