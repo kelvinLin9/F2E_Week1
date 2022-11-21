@@ -15,7 +15,9 @@ https://kelvinlin9.github.io/F2E_Week1/#/
 - Vue Cli
 - VueRouter
 - Bootstrap 5
+- SCSS
 - ESlint(Standard)
+
 
 ## 使用套件
 - gsap
