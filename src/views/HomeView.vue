@@ -1,6 +1,6 @@
 <template>
   <div v-if="isLoading">
-    <section class="bg-full loading Noto-Sans-TC">
+    <section class="bg-full loading Noto-Sans-TC position-fixed">
       <Vue3Lottie :animationData="loading" class="loading-icon"/>
       <p class="loading-text1 fs-23">努力加載中...</p>
       <p class="loading-text2 fs-20">網站中收集
@@ -8,7 +8,7 @@
       </p>
     </section>
   </div>
-  <div v-if="!isLoading">
+  <div>
     <section>
       <!-- navbar -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
@@ -151,10 +151,10 @@
                 請參考本屆官網的首頁視差滾動技巧，並請您重新 redesign 本頁面來設計。
               </p>
               <div class="px-3 py-5">
-                <button class="btn btn-outline-dark rounded-pill me-3">
+                <button class="btn btn-outline-dark rounded-pill me-3" type="button">
                   關卡攻略
                 </button>
-                <button class="btn btn-danger rounded-pill">
+                <button class="btn btn-danger rounded-pill" type="button">
                   &emsp;投稿&emsp;
                 </button>
               </div>
@@ -182,10 +182,10 @@
                 每次要 PDF 簽名都要列印出來再掃描好麻煩，自幹一個 Web 版本的簽名服務吧！
               </p>
               <div class="px-3 py-5">
-                <button class="btn btn-outline-dark rounded-pill me-3">
+                <button class="btn btn-outline-dark rounded-pill me-3" type="button">
                   關卡攻略
                 </button>
-                <button class="btn btn-danger rounded-pill">
+                <button class="btn btn-danger rounded-pill" type="button">
                   &emsp;投稿&emsp;
                 </button>
               </div>
@@ -213,10 +213,10 @@
                 設計關卡內容與網頁互動效果，透過頁面關卡來呈現知識點，讓挑戰者藉由你設計的內容更了解 Scrum
               </p>
               <div class="px-3 py-5">
-                <button class="btn btn-outline-dark rounded-pill me-3">
+                <button class="btn btn-outline-dark rounded-pill me-3" type="button">
                   關卡攻略
                 </button>
-                <button class="btn btn-danger rounded-pill">
+                <button class="btn btn-danger rounded-pill" type="button">
                   &emsp;投稿&emsp;
                 </button>
               </div>
@@ -471,6 +471,16 @@ export default {
         top: 3880,
         behavior: 'smooth'
       })
+    },
+    scrollStop () {
+      const mo = function (e) { e.preventDefault() }
+      document.body.style.overflow = 'hidden'
+      document.addEventListener('touchmove', mo, false)
+    },
+    scrollMove () {
+      const mo = function (e) { e.preventDefault() }
+      document.body.style.overflow = ''
+      document.removeEventListener('touchmove', mo, false)
     }
   },
   mounted () {
@@ -479,7 +489,9 @@ export default {
     this.ChallengeAnimation()
     this.awardsAnimation()
     this.getTime()
+    this.scrollStop()
     setTimeout(() => {
+      this.scrollMove()
       this.isLoading = false
     }, 5000)
     AOS.init()
@@ -490,8 +502,8 @@ export default {
 <style lang="scss" scoped>
 .loading {
   position: absolute;
-  width: calc(100vw - 17px);
-  // width: 100vw;
+  // width: calc(100vw - 17px);
+  width: 100vw;
   height: 100vh;
   z-index: 2000;
   .loading-icon {
